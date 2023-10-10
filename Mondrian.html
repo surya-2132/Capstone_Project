@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mondrian</title>
+    <style>
+         /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+        .container {
+            height: 748px;
+            width: 748px;
+            display: grid;
+            background-color: #000;
+            grid-template-rows: 414px 130px 155px 22px;
+            grid-template-columns: 320px 198px 153px 50px;
+            gap: 9px;
+        }
+        .sub{
+            background-color: #f0f1ec;
+        }
+        .box1{ 
+            background-color: red;
+        }
+        .box2{
+            grid-column: span 3;
+            background-color: rgb(68, 68, 245);
+        }
+        .box3{
+            grid-row: span 2;
+            background-color: green;
+        }
+        .box4{
+            grid-area: 2 / 2 / 4 /4;
+            background-color: yellow;
+        }
+        .box5{
+            background-color: orange;
+        }
+        .box6{
+            background-color: aqua;
+        }
+        .box7{
+            background-color: violet;
+        }
+        .box8{
+            background-color:maroon;
+        }
+        .box9{
+            background-color: wheat;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="sub box1"></div>
+        <div class="sub box2"></div>
+        <div class="sub box3"></div>
+        <div class="sub box4"></div>
+        <div class="sub box5"></div>
+        <div class="sub box6"></div>
+        <div class="sub box7"></div>
+        <div class="sub box8"></div>
+        <div class="sub box9"></div>
+    </div>
+</body>
+</html>
